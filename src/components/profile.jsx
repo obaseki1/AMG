@@ -16,7 +16,7 @@ class Profile extends Component {
             className="coach-img"
           />
           <div className="coach-name">{this.props.name}</div>
-          <div>{this.props.bio}</div>
+          <div className="coach-bio">{this.props.bio}</div>
         </div>
       </div>
     );

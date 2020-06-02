@@ -130,3 +130,7 @@ text-align: center;
     display: inline-block;
     float: left;
 }
+.coach-bio{
+    width: 70%;
+    display: inline-block;
+}
