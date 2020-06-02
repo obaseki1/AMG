@@ -5,7 +5,7 @@ class Slideshow extends Component {
     return (
       <div className="main">
        
-        <img src={require("../AD.jpg")} alt="" />
+        <img src={require("../images/AD.jpg")} alt="" />
         <i class="fas fa-angle-left"></i>  <i class="fas fa-angle-right"></i>
       </div>
     );
