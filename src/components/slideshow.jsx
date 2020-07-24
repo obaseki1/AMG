@@ -5,45 +5,45 @@ class Slideshow extends Component {
     super(props);
     this.state = {
       pics: [
-        'AD',
-        'glen',
-        'guinto'
+        'slide1',
+        'slide2',
+        'slide3'
       ],
-      activePic : 'AD',
+      activePic : 'slide1',
   }
 
   }
 
   nextPic() {
      switch (this.state.activePic) {
-        case 'AD':
-          this.setState({ activePic: 'glen' })
+        case 'slide1':
+          this.setState({ activePic: 'slide2' })
           break;
-        case 'glen':
-          this.setState({ activePic: 'guinto' })
+        case 'slide2':
+          this.setState({ activePic: 'slide3' })
           break;
-        case 'guinto':
-          this.setState({ activePic: 'AD' })
+        case 'slide3':
+          this.setState({ activePic: 'slide1' })
           break;
      }
   }
   
   lastPic() {
     switch (this.state.activePic) {
-      case 'AD':
-        this.setState({ activePic: 'guinto' })
+      case 'slide1':
+        this.setState({ activePic: 'slide3' })
         break;
-      case 'glen':
-        this.setState({ activePic: 'AD' })
+      case 'slide2':
+        this.setState({ activePic: 'slide1' })
         break;
-      case 'guinto':
-        this.setState({ activePic: 'glen' })
+      case 'slide3':
+        this.setState({ activePic: 'slide2' })
         break;
    }
   }
 
   componentDidMount() {
-   // setInterval(() => this.nextPic(), 6000);
+    setInterval(() => this.nextPic(), 6000);
   }
   
 

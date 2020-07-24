@@ -6,20 +6,22 @@ class Header extends Component {
     return (
       <div>
         <header>
-          <div className="title">AMG</div>
+          <div className="logo">
+            <img src={require("../images/logo.jpg")} alt="" />
+          </div>
           <div className="header">
             <div className="menu">
-             
-              <Link to={"/app"} className="menu-item">Home</Link>
-                <Link to={"/coaches"} className="menu-item">Coaches</Link>
-              <a href="" className="menu-item">
+              <Link to={"/app"} className="menu-item">
+                Home
+              </Link>
+              <Link to={"/coaches"} className="menu-item">
+                Coaches
+              </Link>
+              <Link to={"/programs"} className="menu-item">
                 Programs
-              </a>
+              </Link>
             </div>
           </div>
-          <a href="" className="login menu">
-            Login
-          </a>
         </header>
       </div>
     );

@@ -10,11 +10,14 @@ class Profile extends Component {
       <div className="profile">
         <div className="prefix">{this.props.prefix}</div>
         <div className="coach-profile">
-          <img
+          <div className="coach-img">
+             <img
             src={require(`C:/Users/noma_/Documents/Coding/React/amg/src/images/${this.props.pic}.jpg`)}
             alt="profile pic"
-            className="coach-img"
-          />
+            />
+           
+          </div>
+        
           <div className="coach-name">{this.props.name}</div>
           <div className="coach-bio">{this.props.bio}</div>
         </div>
